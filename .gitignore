@@ -10,4 +10,5 @@
 *.local
 *.log
 *.bz2
+*.swp
 .DS_Store
