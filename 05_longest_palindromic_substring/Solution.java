@@ -13,8 +13,11 @@ import java.util.*;
 public class Solution{
 
    public static void main(String args[]){
-     longestPalindrome("Hellothe abbac");
+     String subS = longestPalindrome("Hellothe abbac");
+     System.out.println(subS);
    }
+
+   //preprocess the string to have # as delimitor
    private static String preprocess(String s){
        StringBuilder builder = new StringBuilder();
        char[] sArray = s.toCharArray();
@@ -27,6 +30,26 @@ public class Solution{
 
    public static String longestPalindrome(String s){
       String t = preprocess(s);
-      return null;
+      char[] charlist = t.toCharArray();
+      int lIndex = 0;
+      int rIndex = 0; 
+      int max = 0;
+      String retStr = ""; 
+      for(int i =0; i < charlist.length; i++){
+         lIndex = i;
+         rIndex = i;
+         while(lIndex >= 0 && rIndex < charlist.length &&
+               charlist[lIndex] == charlist[rIndex]){
+           int newMax = rIndex - lIndex + 1;
+           if(newMax > max){
+             max = newMax;
+             retStr = t.substring(lIndex, rIndex);
+           }
+           lIndex--;
+           rIndex++; 
+         }
+      }
+      retStr = retStr.replace("#", "");
+      return retStr; 
    }
 }
