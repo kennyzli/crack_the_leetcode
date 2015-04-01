@@ -4,6 +4,8 @@
  * The overall run time complexity should be O(log (m+n)).
  * Great describtion is here
  * http://www.drdobbs.com/parallel/finding-the-median-of-two-sorted-arrays/240169222
+ * leetcode solution
+ * http://articles.leetcode.com/2011/03/median-of-two-sorted-arrays.html
  *
  */
 public class Solution {
