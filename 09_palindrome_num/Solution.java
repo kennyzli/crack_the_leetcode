@@ -1,6 +1,8 @@
 /**
  * Determine whether an integer is a palindrome. 
  * Do this without extra space.
+ *
+ * TIPS:
  * reverse the integer first and then check 
  * if the number same as the origin one. 
  *
