@@ -1,5 +1,5 @@
-/target/
 /.settings
+/target/
 /.classpath
 /.project
 /logs
@@ -7,6 +7,7 @@
 /src/main/generated/.gitignore
 /dependency-reduced-pom.xml
 *.iml
+*.class
 *.local
 *.log
 *.bz2
