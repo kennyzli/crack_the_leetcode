@@ -32,14 +32,14 @@ public class Solution{
 
     int indexMC = 0;
     int indexEx = 0;
-
+    //exit case
     if(matchedStr.length() == 1)
       return matchedChars[indexMC] == expChars[indexEx];
-
+    //normal case
     if(indexEx < (expChars.length - 1 ) && expChars[indexEx] != '*'){
        return  (matchedChars[indexMC] == expChars[indexEx] || matchedChars[indexMC] == '.') && (isMatch(matchedStr.substring(indexMC + 1), exp.substring(indexEx + 1)));
     }
-    //the expr char is *
+    //when the expr char is * alwasy trying to match the chars after the * if things matched move forward  
     while(indexMC < matchedChars.length && !isMatch(matchedStr.substring(indexMC), exp.substring(indexEx + 1))){
          indexMC++;
     }
