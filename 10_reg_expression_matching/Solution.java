@@ -19,6 +19,8 @@ public class Solution{
     System.out.println(matched);
     matched = isMatch("Hello the world", "Hello*world"); 
     System.out.println(matched);
+    matched = isMatch("aa", "a"); 
+    System.out.println(matched);
   }
 
   /**
@@ -33,7 +35,7 @@ public class Solution{
     int indexMC = 0;
     int indexEx = 0;
     //exit case
-    if(matchedStr.length() == 1)
+    if(matchedStr.length() == 1 || exp.length() == 1)
       return matchedChars[indexMC] == expChars[indexEx];
     //normal case
     if(indexEx < (expChars.length - 1 ) && expChars[indexEx] != '*'){
