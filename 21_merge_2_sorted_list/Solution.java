@@ -25,6 +25,8 @@ public class Solution{
       node = newNode(node, 6);
       node = newNode(node, 8);
       node = newNode(node, 10);
+      node = newNode(node, 12);
+      node = newNode(node, 13);
       
       ListNode head = mergeTwoLists(head1, head2);
 
