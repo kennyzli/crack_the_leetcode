@@ -14,7 +14,7 @@ public class Solution{
   public static void main(String args[]){
   }
 
-  public List<Integer> findSubstring(String S, String[] L) {
-
+  public static List<Integer> findSubstring(String S, String[] L) {
+        
   }
 }
