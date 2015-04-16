@@ -12,7 +12,8 @@ import java.util.*;
  A solution set is: 
  [7] 
  [2, 2, 3] 
- *
+ * Another solution link comes here which need 2 method to make it working
+ * http://www.programcreek.com/2014/02/leetcode-combination-sum-java/
  *
  */
 public class Solution{
