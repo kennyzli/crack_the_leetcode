@@ -29,8 +29,8 @@ public class Solution{
 
       for(int i =1; i< A.length; i++){
          if(A[preIndex] != A[i]){
-            A[curIndex + 1] = A[i];
             curIndex++;
+            A[curIndex] = A[i];
             preIndex = i; // the preIndex has to be moved over i position to avoid future confusion;
          }   
       }
