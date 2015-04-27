@@ -23,6 +23,7 @@ public class Solution{
         }else{
            int tmp = stack.pop();
            sum = Math.max(sum, height[i] * (i - stack.peek() -1));
+           i--;
         }
       }
 
