@@ -46,4 +46,25 @@ public class Solution{
       
       return false;
    }
+
+   private static TreeNode pre; 
+
+   public static boolean isValidBST(TreeNode node){
+      if(node == null)  
+        return true;
+      if(!isValidBST(node.left)){
+        return false;
+      }
+      if(pre != null){
+        if(pre.val >= node.val){
+           return false;
+        }
+      }
+      pre = node;
+      if(!isValidBST(node.right)){
+         return false; 
+      }
+      return true;
+   }
 }
+ 
