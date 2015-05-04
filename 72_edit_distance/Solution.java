@@ -29,7 +29,7 @@ public class Solution{
 
       for(int i =0; i < table.length; i++){
          for(int j =0; j < table[0].length; j++){
-            int min = Math.min(table[i][j + 1], table[i + 1][j]) + 1;
+            int min = Math.min(table[i][j - 1], table[i - 1][j]) + 1;
             if(word1.charAt(i) == word2.charAt(j)){
                min = Math.min(table[i][j], min);
             }else{
